@@ -34,6 +34,7 @@ declare namespace FeathersReactive {
 declare module '@feathersjs/feathers' {
   interface ServiceAddons<T> {
     watch(options?: Partial<FeathersReactive.Options>): ReactiveService<T>;
+    rx(options?: Partial<FeathersReactive.Options>): ReactiveService<T>;
   }
 
   interface ReactiveService<T> {
